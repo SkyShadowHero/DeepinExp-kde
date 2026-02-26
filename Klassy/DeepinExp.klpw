@@ -1,5 +1,5 @@
 [Klassy Window Decoration Preset File]
-version=6.5.2
+version=6.5.3
 
 [Windeco Preset DeepinExp]
 ActiveTitleBarOpacity=100
@@ -58,10 +58,10 @@ DrawBackgroundGradient=false
 DrawBorderOnMaximizedWindows=false
 DrawTitleBarSeparator=true
 ForceColorizeSystemIcons=true
-FullHeightButtonSpacingLeft=2
-FullHeightButtonSpacingRight=2
+FullHeightButtonSpacingLeft=0
+FullHeightButtonSpacingRight=0
 FullHeightButtonWidthMarginLeft=8
-FullHeightButtonWidthMarginRight=18
+FullHeightButtonWidthMarginRight=20
 IconSize=IconLarge
 InactiveTitleBarOpacity=100
 IntegratedRoundedRectangleBottomPadding=1.5
