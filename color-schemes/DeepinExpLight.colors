@@ -85,7 +85,7 @@ ForegroundVisited=224,64,251
 
 [Colors:Window]
 BackgroundAlternate=255,255,255
-BackgroundNormal=248,248,248
+BackgroundNormal=255,255,255
 DecorationFocus=49,149,255
 DecorationHover=74,183,255
 ForegroundActive=255,128,224
@@ -99,7 +99,7 @@ ForegroundVisited=224,64,251
 
 [General]
 ColorScheme=We10XOSWT
-Name=DeepinExp-light
+Name=1
 TitlebarIsAccentColored=false
 shadeSortColumn=true
 
