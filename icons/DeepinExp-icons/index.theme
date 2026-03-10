@@ -393,23 +393,23 @@ MinSize=16
 MaxSize=512
 Type=Scalable
 
-[devices@2x/16]
-Size=16
-Scale=2
-Context=Devices
-Type=Fixed
+# [devices@2x/16]
+# Size=16
+# Scale=2
+# Context=Devices
+# Type=Fixed
 
-[devices@2x/22]
-Size=22
-Scale=2
-Context=Devices
-Type=Fixed
+# [devices@2x/22]
+# Size=22
+# Scale=2
+# Context=Devices
+# Type=Fixed
 
-[devices@2x/24]
-Size=24
-Scale=2
-Context=Devices
-Type=Fixed
+# [devices@2x/24]
+# Size=24
+# Scale=2
+# Context=Devices
+# Type=Fixed
 
 [devices@2x/32]
 Size=32
@@ -497,23 +497,23 @@ MinSize=16
 MaxSize=512
 Type=Scalable
 
-[places@2x/16]
-Size=16
-Scale=2
-Context=Places
-Type=Fixed
+# [places@2x/16]
+# Size=16
+# Scale=2
+# Context=Places
+# Type=Fixed
 
-[places@2x/22]
-Size=22
-Scale=2
-Context=Places
-Type=Fixed
+# [places@2x/22]
+# Size=22
+# Scale=2
+# Context=Places
+# Type=Fixed
 
-[places@2x/24]
-Size=24
-Scale=2
-Context=Places
-Type=Fixed
+# [places@2x/24]
+# Size=24
+# Scale=2
+# Context=Places
+# Type=Fixed
 
 [places@2x/scalable]
 Size=64
