@@ -42,42 +42,6 @@
   </sodipodi:namedview>
   <defs
      id="defs1703">
-    <linearGradient
-       id="linearGradient7"
-       inkscape:collect="always">
-      <stop
-         style="stop-color:#fafbff;stop-opacity:1;"
-         offset="0.30160072"
-         id="stop7" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="1"
-         id="stop8" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient5"
-       inkscape:collect="always">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop5" />
-      <stop
-         style="stop-color:#fafbff;stop-opacity:1;"
-         offset="0.70283818"
-         id="stop6" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient2"
-       inkscape:collect="always">
-      <stop
-         style="stop-color:#fafcff;stop-opacity:1;"
-         offset="0.29900569"
-         id="stop2" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="1"
-         id="stop3" />
-    </linearGradient>
     <style
        id="current-color-scheme"
        type="text/css">.ColorScheme-Text {
@@ -205,33 +169,6 @@
        gradientTransform="matrix(1.2857 0 0 1 264.4 0)"
        gradientUnits="userSpaceOnUse"
        xlink:href="#linearGradient4270" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2"
-       id="linearGradient3"
-       x1="19"
-       y1="910.35999"
-       x2="19"
-       y2="922.35999"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5"
-       id="linearGradient6"
-       x1="-916.35999"
-       y1="-35"
-       x2="-910.35999"
-       y2="-35"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient7"
-       id="linearGradient8"
-       x1="51"
-       y1="910.35999"
-       x2="51"
-       y2="922.35999"
-       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      id="shadow-topleft"
@@ -296,7 +233,7 @@
        fill="currentColor"
        opacity="0.6"
        id="rect1718"
-       style="fill:url(#linearGradient6);fill-opacity:1;opacity:0.85;stroke-width:0.99999375;stroke-dasharray:none;paint-order:stroke fill markers" />
+       style="fill:#ffffff;fill-opacity:1;opacity:0.88;stroke-width:0.99999375;stroke-dasharray:none;paint-order:stroke fill markers" />
     <rect
        transform="matrix(0,-1,-1,0,0,0)"
        x="-910.36005"
@@ -318,7 +255,7 @@
        fill="currentColor"
        opacity="0.6"
        id="path1721"
-       style="fill:url(#linearGradient3);fill-opacity:1;opacity:0.85" />
+       style="fill:#ffffff;fill-opacity:1;opacity:0.88" />
   </g>
   <g
      id="topright"
@@ -329,7 +266,7 @@
        fill="currentColor"
        opacity="0.6"
        id="path1724"
-       style="opacity:0.85;fill:url(#linearGradient8);fill-opacity:1" />
+       style="opacity:0.88;fill:#ffffff;fill-opacity:1" />
   </g>
   <g
      id="bottom"
@@ -344,7 +281,7 @@
        fill="currentColor"
        opacity="0.6"
        id="rect1727"
-       style="opacity:0.85;fill:#ffffff;fill-opacity:1" />
+       style="opacity:0.88;fill:#ffffff;fill-opacity:1" />
   </g>
   <g
      id="bottomleft"
@@ -355,7 +292,7 @@
        fill="currentColor"
        opacity="0.6"
        id="path1730"
-       style="opacity:0.85;fill:#ffffff;fill-opacity:1" />
+       style="opacity:0.88;fill:#ffffff;fill-opacity:1" />
   </g>
   <g
      id="bottomright"
@@ -366,7 +303,7 @@
        fill="currentColor"
        opacity="0.6"
        id="path1733"
-       style="opacity:0.85;fill:#ffffff;fill-opacity:1" />
+       style="opacity:0.88;fill:#ffffff;fill-opacity:1" />
   </g>
   <g
      id="left"
@@ -381,7 +318,7 @@
        fill="currentColor"
        opacity="0.6"
        id="rect1736"
-       style="opacity:0.85;fill:#ffffff;fill-opacity:1" />
+       style="opacity:0.88;fill:#ffffff;fill-opacity:1" />
   </g>
   <g
      id="right"
@@ -395,7 +332,7 @@
        fill="currentColor"
        opacity="0.6"
        id="rect1739"
-       style="fill:#ffffff;fill-opacity:1;opacity:0.85" />
+       style="fill:#ffffff;fill-opacity:1;opacity:0.88" />
   </g>
   <rect
      id="center"
@@ -406,7 +343,7 @@
      class="ColorScheme-Background"
      fill="currentColor"
      opacity=".6"
-     style="fill:#ffffff;fill-opacity:1;opacity:0.85" />
+     style="fill:#ffffff;fill-opacity:1;opacity:0.88" />
   <rect
      id="hint-top-margin"
      x="64"
