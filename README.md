@@ -2,19 +2,8 @@
 
 在 KDE Plasma 桌面复刻深度（deepin）操作系统的主题，目前仅支持了浅色模式。
 
-## 预览
 
-### Fcitx5 输入法
 
-![Fcitx5 输入法预览](img/fcitx5.png)
-
-### 鼠标指针
-
-![鼠标指针缩放](img/cursor_scaling.png)
-
-> KDE 的「晃动鼠标以定位指针」（Shake Cursor）功能在放大动画时不会出现指针边缘模糊的问题。
-
----
 
 ## 概览
 
