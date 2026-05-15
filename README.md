@@ -33,7 +33,7 @@
 
 ### 图标 — DeepinExp-icons
 
-修改自 [Reversal-icon-theme](https://github.com/yeyushengfan258/Reversal-icon-theme)，根据 deepin 主题商店的「Youth」风格重绘了大量应用图标、文件夹图标、状态图标等，涵盖了 actions / apps / categories / devices / emblems / emotes / mimes / places / status / preferences 等完整上下文，总计 **9400+** 个 SVG 图标。
+修改自 [Reversal-icon-theme](https://github.com/yeyushengfan258/Reversal-icon-theme)，根据 deepin 主题商店的「Youth」风格重绘了大量图标，更多图标来自原主题和Youth。
 
 ![部分图标预览](img/icons1.png)
 
@@ -49,7 +49,7 @@
 
 ### Fcitx5 主题 — deepinExp-light
 
-修改自 [Ori-fcitx5]((https://github.com/Reverier-Xu/Ori-fcitx5))，deepin 自带输入法主题在 XWayland 下候选框显示位置偏移或闪烁，此版本修正了该问题。
+修改自 [Ori-fcitx5]((https://github.com/Reverier-Xu/Ori-fcitx5))，因为 deepin 自带输入法主题在 XWayland 下显示bug。
 
 ![Fcitx5 输入法预览](img/fcitx5.png)
 
@@ -84,7 +84,7 @@ git clone https://github.com/你的用户名/DeepinExp-kde.git
 cd DeepinExp-kde
 ```
 
-然后将各组件复制到对应的 KDE 用户目录。**根据你的用户名替换下方命令中的 `xxx`**。
+然后将各组件复制到对应的 KDE 用户目录。
 
 ### 图标
 
@@ -141,7 +141,7 @@ cp color-schemes/DeepinExpLight.colors ~/.local/share/color-schemes/
 
 ---
 
-## 一键安装脚本
+## 一键安装
 
 将所有组件一次性复制到位：
 
