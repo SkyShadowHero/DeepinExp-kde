@@ -1,6 +1,6 @@
 # DeepinExp-kde
 
-在 KDE Plasma 桌面复刻深度（deepin）操作系统的主题，目前仅支持了浅色模式。
+在 KDE Plasma 桌面复刻深度（deepin）操作系统的主题，提供浅色与暗色两套配置。
 
 
 
@@ -14,7 +14,7 @@
 | **Fcitx5 输入法主题** | 基于 Ori-fcitx5 | 避免 deepin 原版在 XWayland 下的显示 bug |
 | **窗口装饰器** | Klassy 原创主题 | 灵感来自 deepin-gtk3-theme |
 | **鼠标指针** | 基于 material_light_cursors | 修复 KDE 晃动鼠标放大功能时的模糊问题 |
-| **配色方案** | 无 | DeepinExpLight |
+| **配色方案** | 无 | DeepinExpLight / DeepinExpDark |
 
 ---
 
@@ -37,15 +37,15 @@
 
 ![底栏及桌面效果](img/bottombar.png)
 
-### Fcitx5 主题 — deepinExp-light
+### Fcitx5 主题 — deepinExp-light / deepinExp-dark
 
-修改自 [Ori-fcitx5]((https://github.com/Reverier-Xu/Ori-fcitx5))，因为 deepin 自带输入法主题在 XWayland 下显示bug。
+修改自 [Ori-fcitx5]((https://github.com/Reverier-Xu/Ori-fcitx5))，因为 deepin 自带输入法主题在 XWayland 下显示bug。浅色与暗色两套主题都有。
 
 ![Fcitx5 输入法预览](img/fcitx5.png)
 
-### Klassy 窗口装饰器 — DeepinExp.klpw
+### Klassy 窗口装饰器 — DeepinExp.klpw / DeepinExpDark.klpw
 
-原创 Klassy 窗口装饰器主题，设计语言参考 [deepin-gtk3-theme](https://github.com/linuxdeepin/deepin-gtk3-theme)，在 Klassy 窗口装饰引擎上实现深度的窗口按钮布局与配色风格。
+原创 Klassy 窗口装饰器主题，设计语言参考 [deepin-gtk3-theme](https://github.com/linuxdeepin/deepin-gtk3-theme)，在 Klassy 窗口装饰引擎上实现深度的窗口按钮布局与配色风格。暗色版（DeepinExpDark）将按钮 hover/press 遮罩改为白色半透明以适应深色背景。
 
 > **注意**：需要安装 [Klassy](https://github.com/paulmcauley/klassy) 窗口装饰引擎才能使用 `.klpw` 文件。
 
@@ -57,9 +57,9 @@
 
 ![鼠标指针缩放无模糊](img/cursor_scaling.png)
 
-### 配色方案 — DeepinExpLight
+### 配色方案 — DeepinExpLight / DeepinExpDark
 
-Plasma 颜色方案，与图标和桌面主题配合使用以获得一致的 deepin 浅色风格。默认配色为不透明，如需半透明效果请在系统设置中启用窗口模糊。
+Plasma 颜色方案，与图标和桌面主题配合使用以获得一致的 deepin 风格。浅色版（DeepinExpLight）默认配色为不透明，如需半透明效果请在系统设置中启用窗口模糊。暗色版（DeepinExpDark）基于相同的 accent 蓝色系构建，适合搭配暗色 Plasma 主题和深色壁纸使用。
 
 (预览见上两图)
 
@@ -94,24 +94,37 @@ cp -r desktoptheme/Win11OS-light-patched ~/.local/share/plasma/desktoptheme/
 
 ### Fcitx5 主题
 
+浅色版：
+
 ```bash
 mkdir -p ~/.local/share/fcitx5/themes/
 cp -r fcitx5/deepinExp-light ~/.local/share/fcitx5/themes/
 ```
 
+暗色版：
+
+```bash
+cp -r fcitx5/deepinExp-dark ~/.local/share/fcitx5/themes/
+```
+
 然后在 Fcitx5 配置工具（`fcitx5-configtool`）或 `~/.config/fcitx5/conf/classicui.conf` 中设置：
 
 ```ini
-Theme=deepinExp-light
+Theme=deepinExp-light   # 浅色
+Theme=deepinExp-dark    # 暗色
 ```
 
 ### Klassy 窗口装饰器
 
-```bash
-cp Klassy/DeepinExp.klpw ~/.local/share/klassy/
-```
+在 Klassy 窗口装饰设置中导入预设文件：
+1. 打开「系统设置 → 应用程序风格 → 窗口装饰」
+2. 选择 **Klassy**，点击右侧的齿轮图标打开设置
+3. 点击右上角的 **Presets** 按钮
+4. 点击 **Add**，再点击 **Import From File**
+5. 选择 `Klassy/DeepinExp.klpw` 导入
+6. 导入后在预设列表中选择 **DeepinExp** 并应用
 
-在「系统设置 → 应用程序风格 → Klassy → 窗口装饰」中导入并选择 **DeepinExp**。
+暗色版重复以上步骤，选择 `Klassy/DeepinExpDark.klpw` 导入并应用 **DeepinExpDark**。
 
 ### 鼠标指针
 
@@ -121,6 +134,7 @@ cp -r cursors/material_light_cursors ~/.local/share/icons/
 
 在「系统设置 → 外观 → 光标」中选择 **Material Light Cursors**。
 
+
 ### 配色方案
 
 ```bash
@@ -128,6 +142,14 @@ cp color-schemes/DeepinExpLight.colors ~/.local/share/color-schemes/
 ```
 
 在「系统设置 → 外观 → 颜色」中选择 **DeepinExpLight**。
+
+暗色版：
+
+```bash
+cp color-schemes/DeepinExpDark.colors ~/.local/share/color-schemes/
+```
+
+在「系统设置 → 外观 → 颜色」中选择 **DeepinExpDark**。
 
 ---
 
@@ -143,17 +165,17 @@ cp color-schemes/DeepinExpLight.colors ~/.local/share/color-schemes/
 ICON_DEST="$HOME/.local/share/icons/"
 THEME_DEST="$HOME/.local/share/plasma/desktoptheme/"
 FCITX_DEST="$HOME/.local/share/fcitx5/themes/"
-KLASSY_DEST="$HOME/.local/share/klassy/"
 COLOR_DEST="$HOME/.local/share/color-schemes/"
 CURSOR_DEST="$HOME/.local/share/icons/"
 
-mkdir -p "$ICON_DEST" "$THEME_DEST" "$FCITX_DEST" "$KLASSY_DEST" "$COLOR_DEST" "$CURSOR_DEST"
+mkdir -p "$ICON_DEST" "$THEME_DEST" "$FCITX_DEST" "$COLOR_DEST" "$CURSOR_DEST"
 
 cp -r icons/DeepinExp-icons "$ICON_DEST"
 cp -r desktoptheme/Win11OS-light-patched "$THEME_DEST"
 cp -r fcitx5/deepinExp-light "$FCITX_DEST"
-cp Klassy/DeepinExp.klpw "$KLASSY_DEST"
+cp -r fcitx5/deepinExp-dark "$FCITX_DEST"
 cp color-schemes/DeepinExpLight.colors "$COLOR_DEST"
+cp color-schemes/DeepinExpDark.colors "$COLOR_DEST"
 cp -r cursors/material_light_cursors "$CURSOR_DEST"
 
 echo "DeepinExp-kde 组件已复制完成。"
