@@ -31,6 +31,7 @@
 修改自 [Win11OS-kde](https://github.com/yeyushengfan258/Win11OS-kde)，主要修复：
 - 窗口模糊时背景透明度过低导致文字难以辨认的问题
 - 桌面图标 hover（悬停）与 active（激活）状态同时存在时的显示 bug
+- 添加Windows同样的底栏顶部细线轮廓
 
 > **注意**：本图中启动器图标设置为 `deepin-launcher`。
 
