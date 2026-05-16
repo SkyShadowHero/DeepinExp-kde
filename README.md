@@ -69,7 +69,7 @@ Plasma 颜色方案，与图标和桌面主题配合使用以获得一致的 dee
 将仓库克隆或下载到本地：
 
 ```bash
-git clone https://github.com/你的用户名/DeepinExp-kde.git
+git clone https://github.com/SkyShadowHero/DeepinExp-kde.git
 cd DeepinExp-kde
 ```
 
