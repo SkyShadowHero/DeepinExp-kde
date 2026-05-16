@@ -2,7 +2,7 @@
 version=6.5.3
 
 [Windeco Preset DeepinExpDark]
-ActiveTitleBarOpacity=100
+ActiveTitleBarOpacity=94
 AdjustBackgroundColorOnPoorContrastActive=true
 AdjustBackgroundColorOnPoorContrastInactive=true
 AnimationsEnabled=true
@@ -62,8 +62,8 @@ FullHeightButtonSpacingLeft=0
 FullHeightButtonSpacingRight=0
 FullHeightButtonWidthMarginLeft=8
 FullHeightButtonWidthMarginRight=20
-IconSize=IconLarge
-InactiveTitleBarOpacity=100
+IconSize=IconMedium
+InactiveTitleBarOpacity=94
 IntegratedRoundedRectangleBottomPadding=1.5
 KlassyDarkIconThemeInherits=Adwaita
 KlassyIconThemeInherits=Adwaita
@@ -86,7 +86,7 @@ NegativeCloseBackgroundHoverPressActive=false
 NegativeCloseBackgroundHoverPressInactive=false
 OnPoorIconContrastActive=BlackWhite
 OnPoorIconContrastInactive=BlackWhite
-OpaqueMaximizedTitleBars=true
+OpaqueMaximizedTitleBars=false
 OverrideActiveTitleBarOpacity=false
 OverrideInactiveTitleBarOpacity=false
 PercentMaximizedTopBottomMargins=85
