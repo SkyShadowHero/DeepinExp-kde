@@ -1,0 +1,155 @@
+/* 标题栏本身 */
+.the_titlebar {
+    display: flex !important;
+    align-items: stretch !important;
+    position: relative !important;
+    background-color: #f3f3f3 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .the_titlebar {
+        background-color: #1f1f1f !important;
+    }
+}
+
+/* 拖拽区域 */
+.the_titlebar-drag-region {
+    flex: 1 !important;
+}
+
+/* 按钮容器 - 绝对定位填满高度 */
+.the_titlebar .MuiBox-root {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+    z-index: 10 !important;
+}
+
+.the_titlebar .MuiBox-root[class*="css-"] {
+    height: auto !important;
+    min-height: unset !important;
+    max-height: unset !important;
+}
+
+/* 按钮基础样式 */
+.the_titlebar .MuiIconButton-root {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    outline: none !important;
+    background-color: transparent !important;
+    width: 46px !important;
+    min-width: 46px !important;
+    height: auto !important;
+    align-self: stretch !important;
+    transition: background-color 0.15s !important;
+}
+
+.the_titlebar .MuiIconButton-root + .MuiIconButton-root {
+    margin-left: 0 !important;
+}
+
+.the_titlebar .MuiIconButton-root[class*="css-"] {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ===== 图标尺寸和默认颜色 ===== */
+.the_titlebar .MuiSvgIcon-root {
+    width: 14px !important;
+    height: 14px !important;
+    color: #1a1a1a !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .the_titlebar .MuiSvgIcon-root {
+        color: #ffffff !important;
+    }
+}
+
+/* ===== 最小化按钮 ===== */
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1) {
+    padding-bottom: 7px !important;
+}
+
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1):hover {
+    background-color: rgba(0,0,0,0.1) !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1):hover .MuiSvgIcon-root {
+    color: #009ae7 !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1):active {
+    background-color: rgba(0,0,0,0.2) !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1):active .MuiSvgIcon-root {
+    color: #009ae7 !important;
+}
+
+/* ===== 恢复图标微调大小 ===== */
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):has(path[d*="H1v16"]) .MuiSvgIcon-root {
+    width: 11px !important;
+    height: 11px !important;
+}
+
+/* ===== 最大化/恢复按钮 ===== */
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):hover {
+    background-color: rgba(0,0,0,0.1) !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):hover .MuiSvgIcon-root {
+    color: #009ae7 !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):active {
+    background-color: rgba(0,0,0,0.2) !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):active .MuiSvgIcon-root {
+    color: #009ae7 !important;
+}
+
+/* ===== 关闭按钮 ===== */
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(3):hover {
+    background-color: rgba(0,0,0,0.1) !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(3):hover .MuiSvgIcon-root {
+    color: #ff8000 !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(3):active {
+    background-color: rgba(0,0,0,0.2) !important;
+}
+.the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(3):active .MuiSvgIcon-root {
+    color: #ff8000 !important;
+}
+
+/* ===== 暗色模式 ===== */
+@media (prefers-color-scheme: dark) {
+    .the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1):hover {
+        background-color: rgba(255,255,255,0.1) !important;
+    }
+    .the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(1):active {
+        background-color: rgba(255,255,255,0.2) !important;
+    }
+    .the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):hover {
+        background-color: rgba(255,255,255,0.1) !important;
+    }
+    .the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(2):active {
+        background-color: rgba(255,255,255,0.2) !important;
+    }
+    .the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(3):hover {
+        background-color: rgba(255,255,255,0.1) !important;
+    }
+    .the_titlebar .MuiBox-root > .MuiIconButton-root:nth-child(3):active {
+        background-color: rgba(255,255,255,0.2) !important;
+    }
+}
+
+/* 水波纹 */
+.the_titlebar .MuiTouchRipple-root {
+    display: none !important;
+}
