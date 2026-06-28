@@ -186,7 +186,7 @@ echo "请在系统设置中分别选择各组件以启用。"
 
 ## 依赖
 
-- **Plasma 桌面**: 仅在 KDE Plasma 6.5.x 测试
+- **Plasma 桌面**: 仅在 KDE Plasma 6.5.x - 6.7.1 测试
 - **窗口装饰器**: [Klassy](https://github.com/paulmcauley/klassy)（需单独安装）
 - **输入法**: Fcitx5
 - **应用程序主题**: 建议使用 [Darkly](https://github.com/Bali10050/Darkly) 以获得更相似的体验
