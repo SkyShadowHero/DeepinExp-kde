@@ -1,4 +1,4 @@
-<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
  <g id="draw-geometry-mirror">
   <g fill="none" stroke-linecap="round">
    <path d="m2 7c7 0-4 6.5 7 6.5" stroke="#da0000" stroke-opacity=".7"/>

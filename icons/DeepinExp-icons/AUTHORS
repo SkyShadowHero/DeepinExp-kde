@@ -1,10 +1,23 @@
+# DeepinYouth Icon Theme — Credits & Attribution
 
-SOURCES:
-OSX_ONE: https://github.com/unc926/OSX_ONE
+## Upstream Sources
 
-CUSTOMIZER:
+This project is based on the following icon themes:
 
-SkyShadowHero <a1233456333@163.com> - DeepinExp icon theme
+- **Reversal icon theme** by yeyushengfan258 <yeyushengfan258@outlook.com>
+  https://github.com/yeyushengfan258/Reversal-icon-theme
+  License: GPL-3.0
 
-yeyushengfan258 <yeyushengfan258@outlook.com> - Reversal icon theme (https://github.com//vinceliuice/Reversal-icon-theme)
+- **deepin-icon-theme** by linuxdeepin
+  https://github.com/linuxdeepin/deepin-icon-theme
+  License: GPL-3.0-or-later
 
+## Inspiration
+
+- **Youth icon theme**
+
+## Author
+
+- **SkyShadowHero** <a1233456333@163.com>
+  Creator and maintainer of the DeepinYouth icon theme.
+  https://github.com/SkyShadowHero/DeepinYouth-icons

@@ -2,7 +2,6 @@
 version=6.7
 
 [Windeco Preset DeepinExp]
-ActiveTitleBarOpacity=75
 AdjustBackgroundColorOnPoorContrastActive=true
 AdjustBackgroundColorOnPoorContrastInactive=true
 AnimationsEnabled=true
@@ -65,7 +64,6 @@ FullHeightButtonSpacingRight=0
 FullHeightButtonWidthMarginLeft=8
 FullHeightButtonWidthMarginRight=24
 IconSize=IconLargeMedium
-InactiveTitleBarOpacity=75
 IntegratedRoundedRectangleBottomPadding=1.5
 KlassyDarkIconThemeInherits=Adwaita
 KlassyIconThemeInherits=Adwaita
@@ -89,8 +87,6 @@ NegativeCloseBackgroundHoverPressInactive=false
 OnPoorIconContrastActive=BlackWhite
 OnPoorIconContrastInactive=BlackWhite
 OpaqueMaximizedTitleBars=false
-OverrideActiveTitleBarOpacity=false
-OverrideInactiveTitleBarOpacity=false
 PercentMaximizedTopBottomMargins=85
 PoorBackgroundContrastThresholdActive=1.1
 PoorBackgroundContrastThresholdInactive=1.1
@@ -178,9 +174,7 @@ WindowOutlineCustomColorOpacityActive=60
 WindowOutlineCustomColorOpacityInactive=25
 WindowOutlineCustomWithContrastOpacityActive=40
 WindowOutlineCustomWithContrastOpacityInactive=25
-WindowOutlineOverlap=true
 WindowOutlineShadowColorOpacity=0
-WindowOutlineSnapToWholePixel=true
 WindowOutlineStyleActive=WindowOutlineNone
 WindowOutlineStyleInactive=WindowOutlineNone
 WindowOutlineThickness=0.5

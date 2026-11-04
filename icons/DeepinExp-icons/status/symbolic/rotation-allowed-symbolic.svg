@@ -1,6 +1,6 @@
-<svg height='16' width='16' xmlns='http://www.w3.org/2000/svg'>
-    <g transform='translate(-833 191.003)'>
+<svg height='16' width='16' xmlns='http://www.w3.org/2000/svg' viewBox="0 0 16 16">
+    
         
-        <path color='#000' d='M841.488-189.982A7.006 7.006 0 0 0 834-183a7.006 7.006 0 0 0 5.192 6.762c3.059.819 6.293-.52 7.877-3.262a.5.5 0 1 0-.868-.5 5.999 5.999 0 0 1-6.752 2.795A5.996 5.996 0 0 1 835-183a5.996 5.996 0 0 1 10.71-3.709L844-185h4v-4l-1.58 1.58a7.012 7.012 0 0 0-4.932-2.562z' fill='#363636' font-family='sans-serif' font-weight='400' overflow='visible' style='line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal' white-space='normal'/>
-    </g>
+        <path color='#000' d="M8.488 1.021 A7.006 7.006 0.000 0 0 1.000 8.003 A7.006 7.006 0.000 0 0 -826.808 205.768 C-1656.749 397.590 -1653.515 396.251 -1651.931 393.509 A0.500 0.500 0.000 1 0 -2485.799 584.012 A5.999 5.999 0.000 0 1 -3325.551 777.810 A5.996 5.996 0.000 0 1 2.000 8.003 A5.996 5.996 0.000 0 1 -820.290 195.297 L11.000 6.003 L-818.000 197.006 L-1651.000 384.009 L-2485.580 576.592 A7.012 7.012 0.000 0 0 -3323.512 765.033 Z" fill='#363636' font-family='sans-serif' font-weight='400' overflow='visible' style='line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal' white-space='normal'/>
+    
 </svg>
