@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "yeyushengfan258@outlook.com",
+                "Name": "yeyushengfan258"
+            }
+        ],
+        "Category": "",
+        "Description": "Win11OS-light theme for plasma",
+        "Description[zh_CN]": "Win11OS 浅色 Plasma 桌面主题",
+        "EnabledByDefault": true,
+        "Id": "Win11OS-light-patched",
+        "License": "GPL-3.0",
+        "Name": "Win11OS-light-patched",
+        "Name[zh_CN]": "Win11OS 浅色（patched）",
+        "Version": "0.1",
+        "Website": "https://github.com/yeyushengfan258/Win11OS-kde"
+    },
+    "X-Plasma-API": "5.0"
+}
