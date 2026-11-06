@@ -9,20 +9,26 @@
 
 | 组件 | 来源 | 修改说明 |
 |------|------|---------|
-| **图标** | 基于 Reversal-icon-theme | 参考 deepin 主题商店的「Youth」重绘了大量图标 |
+| **图标** | [DeepinYouth-icons](https://github.com/SkyShadowHero/DeepinYouth-icons)（子模块） | 基于 Reversal-icon-theme，参考 deepin「Youth」重绘 |
 | **Plasma 桌面主题** | 基于 Win11OS-light | 修复模糊背景透明度与桌面图标 hover/active 显示 bug |
-| **Fcitx5 输入法主题** | 基于 Ori-fcitx5 | 避免 deepin 原版在 XWayland 下的显示 bug |
+| **Fcitx5 输入法主题** | [deepinlike-fcitx5-theme](https://github.com/SkyShadowHero/deepinlike-fcitx5-theme)（子模块） | 基于 Ori-fcitx5，避免 deepin 原版在 XWayland 下的显示 bug |
 | **窗口装饰器** | Klassy 原创主题 | 灵感来自 deepin-gtk3-theme |
 | **鼠标指针** | 基于 material_light_cursors | 修复 KDE 晃动鼠标放大功能时的模糊问题 |
 | **配色方案** | 无 | DeepinExpLight / DeepinExpDark |
+
+> **图标**与 **Fcitx5 主题**已拆成独立仓库，本仓库通过 git submodule 引用（`icons/DeepinYouth`、`fcitx5`），不再存放副本，改动只在各自仓库里做，这里同步子模块即可。
 
 ---
 
 ## 组件详情
 
-### 图标 — DeepinExp-icons
+### 图标 — DeepinYouth
 
-修改自 [Reversal-icon-theme](https://github.com/yeyushengfan258/Reversal-icon-theme)，根据 deepin 主题商店的「Youth」风格重绘了大量图标，更多图标来自原主题和Youth。
+独立仓库：[DeepinYouth-icons](https://github.com/SkyShadowHero/DeepinYouth-icons)，本仓库以子模块 `icons/DeepinYouth` 引用。
+
+修改自 [Reversal-icon-theme](https://github.com/yeyushengfan258/Reversal-icon-theme)，根据 deepin 主题商店的「Youth」风格重绘了大量图标，更多图标来自原主题和 Youth。
+
+`overlay/icons/` 存放尚未提交到上游的本地图标，安装时叠加在主题之上。
 
 ![部分图标预览](img/icons1.png)
 
@@ -37,9 +43,11 @@
 
 ![底栏及桌面效果](img/bottombar.png)
 
-### Fcitx5 主题 — deepinExp-light / deepinExp-dark
+### Fcitx5 主题 — deepinExp-light / deepinExp-dark / *-neo
 
-修改自 [Ori-fcitx5]((https://github.com/Reverier-Xu/Ori-fcitx5))，因为 deepin 自带输入法主题在 XWayland 下显示bug。浅色与暗色两套主题都有。
+独立仓库：[deepinlike-fcitx5-theme](https://github.com/SkyShadowHero/deepinlike-fcitx5-theme)，本仓库以子模块 `fcitx5` 引用。
+
+修改自 [Ori-fcitx5](https://github.com/Reverier-Xu/Ori-fcitx5)，因为 deepin 自带输入法主题在 XWayland 下显示bug。提供浅色与暗色两套，另有 `-neo` 变体（候选词圆角样式）。
 
 ![Fcitx5 输入法预览](img/fcitx5.png)
 
@@ -67,22 +75,33 @@ Plasma 颜色方案，与图标和桌面主题配合使用以获得一致的 dee
 
 ## 安装
 
-将仓库克隆或下载到本地：
+将仓库克隆或下载到本地。图标和 Fcitx5 主题是子模块，克隆时要带上 `--recurse-submodules`：
 
 ```bash
-git clone https://github.com/SkyShadowHero/DeepinExp-kde.git
+git clone --recurse-submodules https://github.com/SkyShadowHero/DeepinExp-kde.git
 cd DeepinExp-kde
 ```
 
-然后将各组件复制到对应的 KDE 用户目录。
+已经克隆过、但 `fcitx5/` 或 `icons/DeepinYouth/` 是空的，补一句：
+
+```bash
+git submodule update --init --recursive
+```
+
+> 直接下载 ZIP 的话子模块目录是空的也没关系：运行 `bash install.sh` 时会自动把两个仓库克隆到 `~/.cache/deepinexp-kde/` 再安装。
+
+然后将各组件复制到对应的 KDE 用户目录，或直接跳到「一键安装」。
 
 ### 图标
 
 ```bash
-cp -r icons/DeepinExp-icons ~/.local/share/icons/
+mkdir -p ~/.local/share/icons/
+cp -r icons/DeepinYouth ~/.local/share/icons/DeepinYouth
 ```
 
-然后在「系统设置 → 外观 → 图标」中选择 **DeepinExp**。
+然后在「系统设置 → 外观 → 图标」中选择 **DeepinYouth**。
+
+> 旧版安装的 `~/.local/share/icons/DeepinExp-icons` 已改名为 `DeepinYouth`，切换主题后可以把这个旧目录删掉。
 
 ### Plasma 桌面主题
 
@@ -94,18 +113,12 @@ cp -r desktoptheme/Win11OS-light-patched ~/.local/share/plasma/desktoptheme/
 
 ### Fcitx5 主题
 
-浅色版：
-
 ```bash
 mkdir -p ~/.local/share/fcitx5/themes/
-cp -r fcitx5/deepinExp-light ~/.local/share/fcitx5/themes/
+cp -r fcitx5/deepinExp-light fcitx5/deepinExp-dark ~/.local/share/fcitx5/themes/
 ```
 
-暗色版：
-
-```bash
-cp -r fcitx5/deepinExp-dark ~/.local/share/fcitx5/themes/
-```
+想连 `-neo` 变体一起装，用通配符：`cp -r fcitx5/deepinExp-* ~/.local/share/fcitx5/themes/`
 
 然后在 Fcitx5 配置工具（`fcitx5-configtool`）或 `~/.config/fcitx5/conf/classicui.conf` 中设置：
 
@@ -155,32 +168,30 @@ cp color-schemes/DeepinExpDark.colors ~/.local/share/color-schemes/
 
 ## 一键安装
 
-将所有组件一次性复制到位：
+```bash
+bash install.sh
+```
+
+脚本把图标、Fcitx5 主题、Plasma 桌面主题、鼠标指针、配色方案一次性复制到位。子模块没初始化（或仓库是 ZIP 下载的）时会自动把两个上游仓库克隆到 `~/.cache/deepinexp-kde/` 再安装，装完会列出需要在系统设置里选的项目。
+
+---
+
+## 更新
 
 ```bash
-#!/bin/bash
-# DeepinExp-kde 一键安装脚本
-# 用法: bash install.sh
-
-ICON_DEST="$HOME/.local/share/icons/"
-THEME_DEST="$HOME/.local/share/plasma/desktoptheme/"
-FCITX_DEST="$HOME/.local/share/fcitx5/themes/"
-COLOR_DEST="$HOME/.local/share/color-schemes/"
-CURSOR_DEST="$HOME/.local/share/icons/"
-
-mkdir -p "$ICON_DEST" "$THEME_DEST" "$FCITX_DEST" "$COLOR_DEST" "$CURSOR_DEST"
-
-cp -r icons/DeepinExp-icons "$ICON_DEST"
-cp -r desktoptheme/Win11OS-light-patched "$THEME_DEST"
-cp -r fcitx5/deepinExp-light "$FCITX_DEST"
-cp -r fcitx5/deepinExp-dark "$FCITX_DEST"
-cp color-schemes/DeepinExpLight.colors "$COLOR_DEST"
-cp color-schemes/DeepinExpDark.colors "$COLOR_DEST"
-cp -r cursors/material_light_cursors "$CURSOR_DEST"
-
-echo "DeepinExp-kde 组件已复制完成。"
-echo "请在系统设置中分别选择各组件以启用。"
+git pull
+git submodule update --remote --merge
 ```
+
+`--remote` 会按 `.gitmodules` 里记录的分支（`main`）把两个子模块拉到上游最新提交，然后再跑一次 `bash install.sh` 把新内容复制到用户目录。
+
+想锁在某个版本而不是跟随最新，进子模块 checkout 对应 tag：
+
+```bash
+git -C icons/DeepinYouth checkout 1.0.1
+```
+
+回到仓库根目录把这次子模块指针变更提交掉即可。
 
 ---
 
